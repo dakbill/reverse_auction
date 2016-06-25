@@ -9,5 +9,9 @@
         "mongodb":"2.1.18",
         "ejs":"2.4.2"
     },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dakbill/reverse_auction.git"
+    },
     "license":"MIT"
 }
