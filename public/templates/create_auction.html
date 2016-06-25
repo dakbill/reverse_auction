@@ -1,0 +1,11 @@
+<div ng-init="init()">
+    <div class="ui grid">
+        <div class="ui seven wide column" >
+            <h1>Hi {{user.name}}. What are you looking for</h1>
+            <textarea placeholder="I want a car selling at $2000" ng-model="auction.description"></textarea>
+            <button class="ui button" ng-click="create_auction()">Done</button>
+
+        </div>
+    </div>
+
+</div>

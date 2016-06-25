@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta property="fb:app_id" content="706961122778433" />
+    <title>Reverse Auction</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css"  />
+</head>
+<body class="ui container" ng-app="reverse-auction" >
+    <ng-view></ng-view>
+</body>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js" defer></script>
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js" defer></script>
+<script type="application/javascript" src="/javascripts/app.js" defer></script>
+
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js" defer></script>
+
+<script type="application/javascript" src="https://connect.facebook.net/en_US/sdk.js?onload=fb_init" id="facebook-jssdk" defer></script>
+<script type="application/javascript" defer>
+    window.fb_init = function(){
+        FB.init({appId: '706961122778433',cookie: true,xfbml: true,version: 'v2.5'});
+    }
+</script>
+</html>

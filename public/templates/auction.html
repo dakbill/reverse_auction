@@ -1,0 +1,42 @@
+<div ng-init="init()">
+    <div class="ui grid">
+        <div class="ui five wide column" ></div>
+        <div class="ui six wide column" style="height: 600px;overflow-y: scroll">
+            <div ng-repeat="message in messages" >
+                <div class="ui raised segment" ng-if="message.type == 'text' " style="margin-top: 10px;margin-bottom: 10px;box-shadow: 2px 4px 5px black;opacity: 0.8">
+                    <div class="ui fluid grid">
+                        <div class="sixteen wide column">
+                            <p style="color: black">{{message.text}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui fluid card" ng-if="message.type == 'item' " style="margin-top: 10px;margin-bottom: 10px">
+                    <div class="content">
+                        <img class="right floated small ui image" ng-src="{{message.image}}">
+
+                        <div class="header">
+                            {{message.name}} for {{message.price| currency:message.currency}}
+                        </div>
+                        <div class="meta">
+                            {{message.citation}}
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui two buttons">
+                            <a class="ui basic green button">Get Opinion</a>
+                            <a class="ui basic red button" href="{{message.checkout}}" >Buy</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="ui five wide column" ></div>
+    </div>
+
+</div>

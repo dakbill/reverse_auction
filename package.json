@@ -1,0 +1,13 @@
+{
+    "name":"reverse-auction",
+    "version":"1.0.0",
+    "description":"A platform to put purchasing power in the hands of buyers",
+    "dependencies":{
+        "express":"4.2.0",
+        "socket.io":"1.4.6",
+        "body-parser":"1.15.2",
+        "mongodb":"2.1.18",
+        "ejs":"2.4.2"
+    },
+    "license":"MIT"
+}
